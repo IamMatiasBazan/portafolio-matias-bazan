@@ -1,0 +1,663 @@
+
+        body {
+            font-family: "Inria Serif", sans-serif;
+        }
+
+        /* HERO SECTION - Desktop: 750px height, contenido 1140px */
+        .seccion1 {
+            background-image: url('../img/fondo_seccion_1.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 750px;
+            display: flex;
+            align-items: center;
+            padding: 100px 0;
+        }
+
+        .hero-container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .presentacion {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: "Caveat Brush", cursive;
+            transform: rotate(-6.44deg);
+        }
+
+        .titulo {
+            margin-top: 48px;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .boton-cv {
+            margin-top: 16px;
+            padding: 30px 80px;
+            background: linear-gradient(113deg,rgba(5, 125, 190, 1) 56%, rgba(219, 216, 216, 1) 100%);
+            clip-path: polygon( 97.11% 18.029%,97.11% 18.029%,97.081% 16.794%,96.997% 15.623%,96.863% 14.531%,96.683% 13.533%,96.462% 12.646%,96.204% 11.885%,95.914% 11.266%,95.597% 10.805%,95.257% 10.516%,94.898% 10.417%,80.426% 10.417%,80.426% 10.417%,80.38% 10.423%,80.334% 10.44%,80.289% 10.47%,80.245% 10.51%,80.202% 10.562%,80.16% 10.624%,80.119% 10.697%,80.08% 10.78%,80.043% 10.874%,80.008% 10.977%,77.602% 18.589%,77.602% 18.589%,77.589% 18.626%,77.576% 18.66%,77.562% 18.69%,77.547% 18.716%,77.532% 18.738%,77.517% 18.757%,77.501% 18.771%,77.485% 18.782%,77.469% 18.788%,77.452% 18.79%,23.204% 18.79%,23.204% 18.79%,23.191% 18.789%,23.177% 18.784%,23.163% 18.777%,23.149% 18.766%,23.136% 18.753%,23.123% 18.737%,23.11% 18.718%,23.098% 18.697%,23.086% 18.673%,23.074% 18.646%,20.012% 11.034%,20.012% 11.034%,19.963% 10.919%,19.912% 10.815%,19.859% 10.724%,19.805% 10.643%,19.749% 10.575%,19.693% 10.518%,19.635% 10.474%,19.577% 10.442%,19.518% 10.423%,19.458% 10.417%,5.102% 10.417%,5.102% 10.417%,4.743% 10.516%,4.403% 10.805%,4.085% 11.266%,3.796% 11.885%,3.538% 12.646%,3.317% 13.533%,3.137% 14.531%,3.003% 15.623%,2.919% 16.794%,2.89% 18.029%,2.89% 81.971%,2.89% 81.971%,2.919% 83.206%,3.003% 84.377%,3.137% 85.469%,3.317% 86.467%,3.538% 87.354%,3.796% 88.115%,4.085% 88.734%,4.403% 89.195%,4.743% 89.484%,5.102% 89.583%,19.458% 89.583%,19.458% 89.583%,19.518% 89.577%,19.577% 89.558%,19.635% 89.526%,19.693% 89.482%,19.749% 89.425%,19.805% 89.357%,19.859% 89.276%,19.912% 89.185%,19.963% 89.081%,20.012% 88.966%,23.074% 81.354%,23.074% 81.354%,23.086% 81.327%,23.098% 81.303%,23.11% 81.282%,23.123% 81.263%,23.136% 81.247%,23.149% 81.234%,23.163% 81.223%,23.177% 81.216%,23.191% 81.211%,23.204% 81.21%,77.452% 81.21%,77.452% 81.21%,77.469% 81.212%,77.485% 81.218%,77.501% 81.229%,77.517% 81.243%,77.532% 81.262%,77.547% 81.284%,77.562% 81.31%,77.576% 81.34%,77.589% 81.374%,77.602% 81.411%,80.008% 89.023%,80.008% 89.023%,80.043% 89.126%,80.08% 89.22%,80.119% 89.303%,80.16% 89.376%,80.202% 89.438%,80.245% 89.49%,80.289% 89.53%,80.334% 89.56%,80.38% 89.577%,80.426% 89.583%,94.898% 89.583%,94.898% 89.583%,95.257% 89.484%,95.597% 89.195%,95.914% 88.734%,96.204% 88.115%,96.462% 87.354%,96.683% 86.467%,96.863% 85.469%,96.997% 84.377%,97.081% 83.206%,97.11% 81.971%,97.11% 18.029% );
+            font-size: 25px; 
+            font-weight: normal;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-cv:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #color {
+            color: white;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(8px);
+            }
+            60% {
+                transform: translateY(4px);
+            }
+        }
+
+        .parrafo-abajo {
+            color: white;
+            margin-top: 120px;
+        }
+
+        .flecha {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 3%;
+            animation: bounce 1.5s infinite;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .flecha:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.2);
+        }
+
+        /* SECCIÓN CENTRAL CON IMÁGENES Y TEXTOS */
+        .image-container {
+            position: relative;
+            height: 650px;
+            margin: 100px 0;
+        }
+
+        .image-top {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .image-bottom {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Contenedor padre */
+.pantalla-completa {
+  position: relative;
+  height: 100vh;
+  overflow: visible; /* Permitimos expansión */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Onda animada */
+.onda-sonido {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45vw;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 10%, transparent 11%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ondas en expansión */
+.onda-sonido::before,
+.onda-sonido::after {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #00A5FF;
+  animation: pulso 2.5s infinite ease-out;
+  z-index: -1;
+}
+
+.onda-sonido::after {
+  animation-delay: 1.25s;
+}
+
+/* Animación */
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Imagen del personaje al frente */
+.imagen-central {
+  position: relative;
+  z-index: 2;
+}
+
+/* Textos al frente también */
+.texto-flotante {
+  position: relative;
+  z-index: 3;
+}
+
+.titulo-portafolio {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00C8FF;
+}
+
+.parrafo-portafolio-1,
+.parrafo-portafolio-2 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .onda-sonido {
+    width: 80vw;
+    top: 95%;
+  }
+}
+
+
+        .icono-box {
+            position: absolute;
+            width: 418px;
+            height: 201px;
+            padding: 66px 0 0 22px;
+            background-color: #C5C5C5;
+            border-radius: 50px;
+            z-index: 3;
+            clip-path: polygon( 49.421% 4.975%,49.421% 4.975%,49.817% 5.128%,50.2% 5.329%,50.569% 5.573%,50.925% 5.858%,51.267% 6.18%,51.596% 6.536%,51.91% 6.921%,52.211% 7.332%,52.499% 7.765%,52.772% 8.218%,52.772% 8.218%,52.776% 8.225%,52.78% 8.232%,52.784% 8.239%,52.788% 8.246%,52.791% 8.253%,52.795% 8.26%,52.799% 8.267%,52.803% 8.274%,52.807% 8.281%,52.811% 8.288%,57.532% 21.173%,57.532% 21.173%,57.683% 21.546%,57.847% 21.885%,58.025% 22.19%,58.215% 22.458%,58.416% 22.689%,58.625% 22.88%,58.843% 23.032%,59.067% 23.142%,59.297% 23.209%,59.53% 23.231%,95.215% 23.231%,95.215% 23.231%,95.603% 23.297%,95.971% 23.485%,96.315% 23.787%,96.628% 24.191%,96.907% 24.689%,97.146% 25.268%,97.341% 25.92%,97.486% 26.634%,97.576% 27.4%,97.608% 28.207%,97.608% 90.439%,97.608% 90.439%,97.576% 91.246%,97.486% 92.011%,97.341% 92.725%,97.146% 93.377%,96.907% 93.957%,96.628% 94.454%,96.315% 94.859%,95.971% 95.16%,95.603% 95.349%,95.215% 95.414%,4.785% 95.414%,4.785% 95.414%,4.397% 95.349%,4.029% 95.16%,3.685% 94.859%,3.372% 94.454%,3.093% 93.957%,2.854% 93.377%,2.659% 92.725%,2.514% 92.011%,2.424% 91.246%,2.392% 90.439%,2.392% 9.95%,2.392% 9.95%,2.424% 9.143%,2.514% 8.378%,2.659% 7.664%,2.854% 7.012%,3.093% 6.432%,3.372% 5.935%,3.685% 5.53%,4.029% 5.229%,4.397% 5.04%,4.785% 4.975%,49.421% 4.975% );
+        }
+
+        #icono1 {
+            top: 4%;
+            left: 5%;
+        }
+        #icono2 {
+            top: 10%;
+            right: 5%;
+        }
+        #icono3 {
+            bottom: 0%;
+            left: 5%;
+        }
+        #icono4 {
+            bottom: 5%;
+            right: 5%;
+        }
+
+        .icono-box h3 {
+            font-size: 20px;
+            color: #057DBE;
+            margin-bottom: 16px;
+        }
+
+        .icono-box p {
+            font-size: 16px;
+            width: 370px;
+            margin: 0;
+        }
+
+        /* SECCIÓN PROYECTOS */
+        .seccion-2 {
+            padding: 100px 0;
+        }
+
+        .titulo-proyectos {
+            font-size: 48px;
+            font-weight: bold;
+            color: #00C8FF;
+            margin-bottom: 32px;
+        }
+
+        .cards {
+            margin-top: 32px;
+        }
+
+        .cards img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .cards img:hover {
+            transform: scale(1.05);
+        }
+
+        /* CARRUSEL 3D */
+        .seccion-3 {
+            min-height: 100vh;
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel-3d {
+            position: relative;
+            perspective: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        .carousel {
+            position: absolute;
+            top: 0;
+            transform-style: preserve-3d;
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel img {
+            position: absolute;
+            object-fit: cover;
+            left: 250px;
+            top: 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(500px); }
+        .carousel img:nth-child(2) { transform: rotateY(90deg) translateZ(500px); }
+        .carousel img:nth-child(3) { transform: rotateY(180deg) translateZ(500px); }
+        .carousel img:nth-child(4) { transform: rotateY(270deg) translateZ(500px); }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            font-size: 2rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            z-index: 10;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .prev { left: -60px; }
+        .next { right: -60px; }
+
+        .img-personaje {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* FOOTER */
+        .seccion-4 {
+            padding: 100px 0;
+        }
+
+        #logo {
+            width: 177px;
+            height: 64px;
+        }
+
+        #dribbble {
+            width: 90px;
+            height: 60px;
+        }
+
+        #linkedin {
+            width: 65px;
+            height: 60px;
+        }
+
+        #youtube {
+            width: 80px;
+            height: 50px;
+        }
+
+        .social-icons img {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* TABLET RESPONSIVO - 1024px, contenido 85-90% */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .hero-container {
+                max-width: 90%;
+                padding: 0 5%;
+            }
+
+            .titulo {
+                font-size: 40px;
+            }
+
+            .boton-cv {
+                padding: 24px 60px;
+                font-size: 22px;
+            }
+
+            .image-container {
+                height: 550px;
+            }
+
+            .icono-box {
+                width: 350px;
+                height: 180px;
+                padding: 50px 0 0 20px;
+            }
+
+            .icono-box p {
+                width: 310px;
+                font-size: 15px;
+            }
+
+            .titulo-proyectos {
+                font-size: 42px;
+            }
+
+            .carousel-3d {
+                width: 280px;
+                height: 230px;
+            }
+
+            .carousel img {
+                width: 280px;
+                height: 230px;
+            }
+        }
+
+        /* MÓVIL RESPONSIVO - 480px, contenido 340px, márgenes 70px */
+        @media (max-width: 480px) {
+            .seccion1 {
+                background-image: url('../img/movil/fondo_movil.webp');
+                background-attachment: scroll;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: auto;
+                padding: 80px 0;
+            }
+
+            .hero-container {
+                max-width: 340px;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+            .contenedor-logo {
+                text-align: left;
+            }
+
+            .presentacion {
+                font-size: 14px;
+                margin-top: 12px;
+                text-align: left;
+            }
+
+            .titulo {
+                font-size: 28px;
+                margin-top: 32px;
+                line-height: 1.3;
+                text-align: left;
+            }
+
+            .contenedor-boton {
+                text-align: left;
+            }
+
+            .boton-cv {
+                padding: 32px 83px 32px 83px;
+                font-size: 16px;
+                margin-top: 24px;
+                clip-path: none;
+                border-radius: 25px;
+                background: linear-gradient(113deg,rgba(5, 125, 190, 1) 56%, rgba(219, 216, 216, 1) 100%);
+                clip-path: polygon( 97.11% 18.029%,97.11% 18.029%,97.081% 16.794%,96.997% 15.623%,96.863% 14.531%,96.683% 13.533%,96.462% 12.646%,96.204% 11.885%,95.914% 11.266%,95.597% 10.805%,95.257% 10.516%,94.898% 10.417%,80.426% 10.417%,80.426% 10.417%,80.38% 10.423%,80.334% 10.44%,80.289% 10.47%,80.245% 10.51%,80.202% 10.562%,80.16% 10.624%,80.119% 10.697%,80.08% 10.78%,80.043% 10.874%,80.008% 10.977%,77.602% 18.589%,77.602% 18.589%,77.589% 18.626%,77.576% 18.66%,77.562% 18.69%,77.547% 18.716%,77.532% 18.738%,77.517% 18.757%,77.501% 18.771%,77.485% 18.782%,77.469% 18.788%,77.452% 18.79%,23.204% 18.79%,23.204% 18.79%,23.191% 18.789%,23.177% 18.784%,23.163% 18.777%,23.149% 18.766%,23.136% 18.753%,23.123% 18.737%,23.11% 18.718%,23.098% 18.697%,23.086% 18.673%,23.074% 18.646%,20.012% 11.034%,20.012% 11.034%,19.963% 10.919%,19.912% 10.815%,19.859% 10.724%,19.805% 10.643%,19.749% 10.575%,19.693% 10.518%,19.635% 10.474%,19.577% 10.442%,19.518% 10.423%,19.458% 10.417%,5.102% 10.417%,5.102% 10.417%,4.743% 10.516%,4.403% 10.805%,4.085% 11.266%,3.796% 11.885%,3.538% 12.646%,3.317% 13.533%,3.137% 14.531%,3.003% 15.623%,2.919% 16.794%,2.89% 18.029%,2.89% 81.971%,2.89% 81.971%,2.919% 83.206%,3.003% 84.377%,3.137% 85.469%,3.317% 86.467%,3.538% 87.354%,3.796% 88.115%,4.085% 88.734%,4.403% 89.195%,4.743% 89.484%,5.102% 89.583%,19.458% 89.583%,19.458% 89.583%,19.518% 89.577%,19.577% 89.558%,19.635% 89.526%,19.693% 89.482%,19.749% 89.425%,19.805% 89.357%,19.859% 89.276%,19.912% 89.185%,19.963% 89.081%,20.012% 88.966%,23.074% 81.354%,23.074% 81.354%,23.086% 81.327%,23.098% 81.303%,23.11% 81.282%,23.123% 81.263%,23.136% 81.247%,23.149% 81.234%,23.163% 81.223%,23.177% 81.216%,23.191% 81.211%,23.204% 81.21%,77.452% 81.21%,77.452% 81.21%,77.469% 81.212%,77.485% 81.218%,77.501% 81.229%,77.517% 81.243%,77.532% 81.262%,77.547% 81.284%,77.562% 81.31%,77.576% 81.34%,77.589% 81.374%,77.602% 81.411%,80.008% 89.023%,80.008% 89.023%,80.043% 89.126%,80.08% 89.22%,80.119% 89.303%,80.16% 89.376%,80.202% 89.438%,80.245% 89.49%,80.289% 89.53%,80.334% 89.56%,80.38% 89.577%,80.426% 89.583%,94.898% 89.583%,94.898% 89.583%,95.257% 89.484%,95.597% 89.195%,95.914% 88.734%,96.204% 88.115%,96.462% 87.354%,96.683% 86.467%,96.863% 85.469%,96.997% 84.377%,97.081% 83.206%,97.11% 81.971%,97.11% 18.029% );
+                
+            }
+
+            .parrafo-abajo {
+                margin-top: 80px;
+                text-align: center;
+            }
+
+            .flecha {
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            /* Sección central adaptada para móvil */
+            .image-container {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 80px 0;
+                max-width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .image-top, .image-bottom {
+                position: static;
+                transform: none;
+                width: 100%;
+                max-width: 340px;
+            }
+
+            .icono-box {
+                position: static;
+                width: 100%;
+                max-width: 340px;
+                height: auto;
+                margin-bottom: 24px;
+                padding: 24px;
+                clip-path: none;
+                border-radius: 25px;
+            }
+
+            .icono-box h3 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            .icono-box p {
+                width: auto;
+                font-size: 14px;
+            }
+
+            /* Proyectos */
+            .seccion-2 {
+                padding: 80px 0;
+            }
+
+            .titulo-proyectos {
+                font-size: 28px;
+            }
+
+            .cards .col-4 {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            /* Carrusel */
+            .seccion-3 {
+                padding: 80px 0;
+                min-height: auto;
+            }
+
+            .carousel-3d {
+                width: 250px;
+                height: 200px;
+                margin-bottom: 32px;
+            }
+
+            .carousel img {
+                width: 250px;
+                height: 200px;
+            }
+
+            .prev, .next {
+                display: none;
+            }
+
+            .img-personaje {
+                max-width: 200px;
+            }
+
+            /* Footer */
+            .seccion-4 {
+                padding: 80px 0;
+            }
+
+            #logo {
+                width: 130px;
+                height: auto;
+            }
+
+            #dribbble, #linkedin, #youtube {
+                width: 40px;
+                height: auto;
+            }
+        }
+
+        /* TABLETS Y MÓVILES GRANDES - Entre 481px y 768px */
+        @media (max-width: 768px) and (min-width: 481px) {
+            .hero-container {
+                max-width: 85%;
+                padding: 0 7.5%;
+            }
+
+            .seccion1 {
+                padding: 80px 0;
+            }
+
+            .titulo {
+                font-size: 32px;
+            }
+
+            .boton-cv {
+                padding: 32px 83px 32px 83px;
+                clip-path: polygon( 97.11% 18.029%,97.11% 18.029%,97.081% 16.794%,96.997% 15.623%,96.863% 14.531%,96.683% 13.533%,96.462% 12.646%,96.204% 11.885%,95.914% 11.266%,95.597% 10.805%,95.257% 10.516%,94.898% 10.417%,80.426% 10.417%,80.426% 10.417%,80.38% 10.423%,80.334% 10.44%,80.289% 10.47%,80.245% 10.51%,80.202% 10.562%,80.16% 10.624%,80.119% 10.697%,80.08% 10.78%,80.043% 10.874%,80.008% 10.977%,77.602% 18.589%,77.602% 18.589%,77.589% 18.626%,77.576% 18.66%,77.562% 18.69%,77.547% 18.716%,77.532% 18.738%,77.517% 18.757%,77.501% 18.771%,77.485% 18.782%,77.469% 18.788%,77.452% 18.79%,23.204% 18.79%,23.204% 18.79%,23.191% 18.789%,23.177% 18.784%,23.163% 18.777%,23.149% 18.766%,23.136% 18.753%,23.123% 18.737%,23.11% 18.718%,23.098% 18.697%,23.086% 18.673%,23.074% 18.646%,20.012% 11.034%,20.012% 11.034%,19.963% 10.919%,19.912% 10.815%,19.859% 10.724%,19.805% 10.643%,19.749% 10.575%,19.693% 10.518%,19.635% 10.474%,19.577% 10.442%,19.518% 10.423%,19.458% 10.417%,5.102% 10.417%,5.102% 10.417%,4.743% 10.516%,4.403% 10.805%,4.085% 11.266%,3.796% 11.885%,3.538% 12.646%,3.317% 13.533%,3.137% 14.531%,3.003% 15.623%,2.919% 16.794%,2.89% 18.029%,2.89% 81.971%,2.89% 81.971%,2.919% 83.206%,3.003% 84.377%,3.137% 85.469%,3.317% 86.467%,3.538% 87.354%,3.796% 88.115%,4.085% 88.734%,4.403% 89.195%,4.743% 89.484%,5.102% 89.583%,19.458% 89.583%,19.458% 89.583%,19.518% 89.577%,19.577% 89.558%,19.635% 89.526%,19.693% 89.482%,19.749% 89.425%,19.805% 89.357%,19.859% 89.276%,19.912% 89.185%,19.963% 89.081%,20.012% 88.966%,23.074% 81.354%,23.074% 81.354%,23.086% 81.327%,23.098% 81.303%,23.11% 81.282%,23.123% 81.263%,23.136% 81.247%,23.149% 81.234%,23.163% 81.223%,23.177% 81.216%,23.191% 81.211%,23.204% 81.21%,77.452% 81.21%,77.452% 81.21%,77.469% 81.212%,77.485% 81.218%,77.501% 81.229%,77.517% 81.243%,77.532% 81.262%,77.547% 81.284%,77.562% 81.31%,77.576% 81.34%,77.589% 81.374%,77.602% 81.411%,80.008% 89.023%,80.008% 89.023%,80.043% 89.126%,80.08% 89.22%,80.119% 89.303%,80.16% 89.376%,80.202% 89.438%,80.245% 89.49%,80.289% 89.53%,80.334% 89.56%,80.38% 89.577%,80.426% 89.583%,94.898% 89.583%,94.898% 89.583%,95.257% 89.484%,95.597% 89.195%,95.914% 88.734%,96.204% 88.115%,96.462% 87.354%,96.683% 86.467%,96.863% 85.469%,96.997% 84.377%,97.081% 83.206%,97.11% 81.971%,97.11% 18.029% );
+                font-size: 18px;
+            }
+
+            .image-container {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 80px 0;
+            }
+
+            .image-top, .image-bottom {
+                position: static;
+                transform: none;
+                width: 90%;
+            }
+
+            .icono-box {
+                position: static;
+                width: 90%;
+                height: auto;
+                margin-bottom: 24px;
+                padding: 24px;
+                clip-path: none;
+                border-radius: 25px;
+            }
+
+            .icono-box p {
+                width: auto;
+            }
+
+            .seccion-2 {
+                padding: 80px 0;
+            }
+
+            .titulo-proyectos {
+                font-size: 36px;
+            }
+
+            .cards .col-4 {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            .seccion-3 {
+                padding: 80px 0;
+            }
+
+            .carousel-3d {
+                width: 280px;
+                height: 230px;
+            }
+
+            .carousel img {
+                width: 280px;
+                height: 230px;
+            }
+
+            .prev, .next {
+                left: -40px;
+                right: -40px;
+            }
+
+            .seccion-4 {
+                padding: 80px 0;
+            }
+        }
+
